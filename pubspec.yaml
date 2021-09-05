@@ -60,10 +60,37 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+     - family: BaiJamjuree
+       fonts:
+         - asset: fonts/BaiJamjuree-Bold.ttf
+     - family: ChakraPetch
+       fonts:
+         - asset: fonts/ChakraPetch-Bold.ttf
+     - family: IBMPlexSansThai
+       fonts:
+         - asset: fonts/IBMPlexSansThai-ExtraLight.ttf
+     - family: Kanit
+       fonts:
+         - asset: fonts/Kanit-BlackItalic.ttf
+     - family: Mali
+       fonts:
+         - asset: fonts/Mali-BoldItalic.ttf
+     - family: Mitr
+       fonts:
+         - asset: fonts/Mitr-Medium.ttf
+     - family: Pridi
+       fonts:
+         - asset: fonts/Pridi-Medium.ttf
+     - family: Prompt
+       fonts:
+         - asset: fonts/Prompt-Medium.ttf
+     - family: Sarabun
+       fonts:
+         - asset: fonts/Sarabun-Medium.ttf
+     - family: Taviraj
+       fonts:
+         - asset: fonts/Taviraj-Medium.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

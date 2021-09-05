@@ -10,19 +10,36 @@ class RealGamePage extends StatefulWidget {
 class _GamePageState extends State<RealGamePage> {
   @override
   Widget build(BuildContext context) {
-    var ans = TextField();
-    var pic = Image(
-      image: AssetImage("assets/images/123.png"),
-      width: 100,
-    );
-    var indicate = Text("มากกว่า");
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("random game"),
-        backgroundColor: Colors.orange,
+    var ans = Row(children: [
+      Expanded(
+        child: TextField(
+          decoration: InputDecoration(
+              border:
+                  OutlineInputBorder(borderSide: BorderSide(color: Colors.pink)),)
+        ),
       ),
-      body: Column(crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [pic, indicate, ans],),
+      TextButton(onPressed: (){}, child: Text("submit"))
+    ]);
+    var title = Text(
+      "Guess The Number",
+      style: TextStyle(),
+    );
+
+    var pic = Image(
+      image: AssetImage("assets/images/logo_number.png"),
+      width: 240,
+    );
+    var top = Column(
+      children: [pic, title],
+    );
+    var indicate = Center(child: Text("มากกว่า"));
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [top, indicate, ans],
+        ),
+      ),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'Pages/game/real_game.dart';
 import 'Pages/homework8/Thai Font Viewer.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ThaiFontViewer(),
+      home: RealGamePage(),
     );
   }
 }
